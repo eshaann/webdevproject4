@@ -1,0 +1,90 @@
+body {
+    display: grid;
+    grid-template-columns: 33% 33% 34% ;
+    grid-template-rows: 20% 25% 25% 30%;
+    font-size: medium;
+    background-image:url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+li{
+    list-style: none;
+}
+
+
+#vid{
+    color:white;
+    display:flex;
+    justify-content: center;
+    grid-column-start:1;
+    grid-row-start: 2;
+}
+
+
+#input{
+    color:white;
+    text-align:center;
+    grid-column-start:3;
+    grid-row-start: 2;
+}
+
+#cont{
+    color:white;
+    text-align:center;
+    grid-column-start:2;
+    grid-row-start: 2;
+}
+
+#increment{
+    color:white;
+    text-align:center;
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+nav{
+    grid-row-start:1;
+    grid-column-start: 1;
+    grid-column-end:4;
+}
+
+/* For Preloader */
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #37323E;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .preloader-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Syne Mono', monospace;
+    text-shadow: 0 0 5px #fff;
+
+  }
+  
+  /* Add animation for preloader */
+  @keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+  
+  .preloader:before {
+    content: "";
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 0.5s linear infinite;
+  }
